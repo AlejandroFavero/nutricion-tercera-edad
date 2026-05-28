@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrición en la Tercera Edad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #1a3a1a;
+      background-image:
+        radial-gradient(ellipse at top, #2d5a27 0%, #1a3a1a 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23356635' fill-opacity='0.15'%3E%3Cpath d='M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm0 4c14.4 0 26 11.6 26 26S44.4 56 30 56 4 44.4 4 30 15.6 4 30 4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .leaf-decoration {
+      font-size: 2rem;
+      color: #7ec87e;
+      letter-spacing: 8px;
+      margin-bottom: 10px;
+      
+    }
+
+    h1 {
+      color: #d4f0d4;
+      font-size: 2.4rem;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #8ec98e;
+      font-size: 0.95rem;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(to right, transparent, #5aab5a, transparent);
+      margin: 0 auto 50px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    nav a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #2a5c2a, #1f4a1f);
+      color: #c8e8c8;
+      text-decoration: none;
+      padding: 18px 32px;
+      border-radius: 12px;
+      width: 100%;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border: 1px solid #3d7a3d;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+      transition: all 0.25s ease;
+      line-height: 1.4;
+    }
+
+    nav a:hover {
+      background: linear-gradient(135deg, #357a35, #2a5c2a);
+      color: #eaf7ea;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 0 1px #5aab5a;
+      border-color: #5aab5a;
+    }
+
+    nav a .icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    nav a .link-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    nav a .link-label {
+      font-size: 0.78rem;
+      color: #7abf7a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a .link-title {
+      font-size: 0.97rem;
+      color: #d4f0d4;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #4a7a4a;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="leaf-decoration">👴🏼 🥦 👵🏾</div>
+  <h1>Nutrición en la Tercera Edad</h1>
+  <p class="subtitle">Recursos</p>
+  <div class="divider"></div>
+
+  <nav>
+    <a href="https://www.who.int/es/news-room/fact-sheets/detail/ageing-and-health" target="_blank" rel="noopener">
+      <span class="icon">🌍</span>
+      <span class="link-text">
+        <span class="link-label">Organización Mundial de la Salud</span>
+        <span class="link-title">Envejecimiento y salud — OMS</span>
+      </span>
+    </a>
+
+    <a href="https://www.incmnsz.mx/2023/manuales/Procedimientos%20_Nutricion_Aplicada_y%20Educacion_Nutricional_2021.pdf" target="_blank" rel="noopener">
+      <span class="icon">📋</span>
+      <span class="link-text">
+        <span class="link-label">INCMNSZ</span>
+        <span class="link-title">Manual de Nutrición Aplicada y Educación Nutricional</span>
+      </span>
+    </a>
+
+    <a href="https://www.gob.mx/cms/uploads/attachment/file/138258/NOM-043-servicios-basicos-salud-educacion-alimentaria.pdf" target="_blank" rel="noopener">
+      <span class="icon">📄</span>
+      <span class="link-text">
+        <span class="link-label">Gobierno de México</span>
+        <span class="link-title">NOM-043 — Educación Alimentaria y Servicios de Salud</span>
+      </span>
+    </a>
+  </nav>
+
+  <footer>Soluciones web: 9514977718</footer>
+
+</body>
+</html>
